@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+  --primary-text-1: hsl(238, 29%, 16%);
+  --primary-text-2: hsl(14, 88%, 65%);
+  --primary-gradient-1: hsl(273, 75%, 66%);
+  --primary-gradient-2: hsl(240, 73%, 65%);
+  --neutral-text-1: hsl(237, 12%, 33%);
+  --neutral-text-2: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+}
+
+body {
+  background-image: linear-gradient(var(--primary-gradient-1), var(--primary-gradient-2));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: white;
+  border-radius: 30px;
+  width: 87%;
+  padding: 2em;
+  margin: 150px auto 75px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.question {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+}
+
+.answer {
+  line-height: 1.5em;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 1.5em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
